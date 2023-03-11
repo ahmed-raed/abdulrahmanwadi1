@@ -1,0 +1,336 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#home {
+    background-image: url(images/background.png);
+    height: 100vh;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+    padding: 19px;
+    position: relative;
+    right: 280px;
+}
+
+.menu ul li {
+    list-style-type: none;
+}
+
+.menu ul li a {
+    color: whitesmoke;
+    font-size: 40px;
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 600;
+    transition: all 0.3s linear;
+}
+
+.menu ul li a:hover {
+    color: #f7a132;
+    transition: all 0.3s linear;
+}
+
+.intro {
+    font-size: 50px;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    margin: 25px;
+    position: relative;
+    top: 150px;
+    right: 200px;
+    width: fit-content;
+}
+
+.intro .first,
+.intro div {
+    color: whitesmoke;
+}
+
+.intro .second {
+    color: whitesmoke;
+}
+
+.intro .second span,
+.intro .text .typing {
+    color: #f7a132;
+}
+
+
+#whoami {
+    height: 100vh;
+    background-image: url(images/background2.png);
+    background-size: cover;
+}
+
+#whoami .layer {
+    background-color: rgba(0, 0, 0, 0.40);
+    height: 100%;
+}
+
+#whoami .circle {
+    width: 300px;
+    height: 300px;
+    background-color: #f7a132;
+    border-radius: 50%;
+    position: relative;
+    top: 100px;
+    left: 18px;
+    z-index: 999;
+    margin: 0 auto;
+}
+
+#whoami .pic {
+    display: flex;
+    justify-content: center;
+}
+
+#whoami .pic img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: relative;
+    top: -175px;
+    border: 3px solid black;
+    z-index: 9999;
+}
+
+#whoami .brief {
+    width: 700px;
+    height: fit-content;
+    background-color: #0d293e;
+    padding: 60px;
+    border-radius: 22px;
+    margin: 0 auto;
+    position: relative;
+    bottom: 220px;
+}
+
+#whoami .brief p {
+    font-size: 35px;
+    color: white;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+.spikes {
+    position: relative;
+}
+  
+.spikes::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    left: -0%;
+    top: 100%;
+    z-index: 10;
+    display: block;
+    height: 50px;
+    background-size: 50px 100%;
+    background-image: linear-gradient(135deg, rgb(153 153 153) 25%, transparent 25%), linear-gradient(225deg, rgb(153 153 153) 25%, transparent 25%);
+    background-position: 0 0;
+}
+
+#contact {
+    height: 95vh;
+    background-color: #111;
+}
+
+#contact h3 {
+    color: #f7a132;
+    font-size: 40px;
+    padding: 50px;
+    font-family: 'Tajawal', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+#contact .items {
+    background-color: whitesmoke;
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    position: relative;
+    top: 25vh;
+    padding: 25px;
+    border-radius: 50px;
+}
+
+#contact .items a {
+    color: black;
+    font-size: 35px;
+    margin: 0 20px;
+    background-color: rgb(235, 235, 235);
+    padding: 15px 13px 9px;
+    border-radius: 50%;
+    border: 4px solid rgb(180, 180, 180);
+    box-shadow: 5px 5px 10px 1px grey;
+    transition: all 0.3s linear;
+}
+
+#contact .items a:hover {
+    box-shadow: 3px 3px 4px 1px grey;
+    transition: all 0.3s linear;
+}
+
+#contact .items i {
+    font-weight: 500;
+}
+
+.bxl-twitter {
+    color: #1d9bf0;
+}
+
+.bxl-youtube {
+    color: #ff0000;
+}
+
+.bxl-instagram {
+    color: rgb(247 49 80);
+    font-size: 37px;
+}
+
+.bxl-facebook {
+    color: #0778e9;
+}
+
+footer {
+    padding: 15px 23px;
+    background-color: #111;
+    color: white;
+    text-align: center;
+    font-family: 'Tajawal', sans-serif;
+}
+
+footer a {
+    color: white;
+}
+
+.scroll-up-btn {
+    position: fixed;
+    height: 43px;
+    width: 42px;
+    background-color: #f7a132;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 998;
+    font-size: 30px;
+    border-radius: 6px;
+    border-bottom-width: 2px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.8s ease;
+}
+
+.scroll-up-btn.show {
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.scroll-up-btn:hover {
+    filter: brightness(90%);
+}
+
+@media screen and (max-width: 1440px) {
+    .menu ul {
+        right: 230px;
+    }
+    .intro {
+        right: 145px;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .menu ul {
+        right: 185px;
+    }
+    .intro {
+        right: 125px;
+    }
+    #whoami .brief {
+        bottom: 274px;
+    }
+    #whoami .circle {
+        top: 70px;
+    }
+    #whoami .pic img {
+        top: -214px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .menu ul {
+        right: 145px;
+    }
+    .intro {
+        right: 70px;
+    }
+}
+
+@media screen and (max-width: 947px) {
+    #home {
+        background-image: url(images/portrait.JPEG);
+        background-size: cover;
+    }
+    .menu ul {
+        right: 14px;
+    }
+    .intro {
+        font-size: 30px;
+        right: 7px;
+        top: 17px;
+    }
+    .menu ul li a {
+        color: whitesmoke;
+        font-size: 20px;
+    }
+    .menu ul {
+        display: flex;
+        justify-content: space-between;
+        width: 330px;
+    }
+    #whoami .circle {
+        top: 8px;
+        width: 260px;
+        height: 260px;
+    }
+    #whoami .pic img {
+        top: -236px;
+        width: 260px;
+        height: 260px;
+    }
+    #whoami .brief {
+        width: 340px;
+        padding: 40px;
+    }
+    #whoami .brief p {
+        font-size: 22px;
+    }
+    #contact h3 {
+        font-size: 20px;
+    }
+    #contact .items {
+        display: flex;
+        flex-direction: column-reverse;
+        top: -3vh;
+        padding: 18px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .intro {
+        top: 6px;
+    }
+}
